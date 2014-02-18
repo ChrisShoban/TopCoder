@@ -88,4 +88,15 @@ public class EllysNumberGuessingTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test(timeout = 2000)
+    public void testCase7() {
+        int[] guesses = new int[]{404, 4};
+        int[] answers = new int[]{200, 200};
+
+        int expected = 204;
+        int actual = solution.getNumber(guesses, answers);
+
+        Assert.assertEquals(expected, actual);
+    }
+    
 }
